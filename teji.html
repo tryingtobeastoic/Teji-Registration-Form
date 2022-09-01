@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Teji Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Teji Survey Form</h1>
+    <p id="description">Thank you for taking the time to take this survey</p>
+    <form id="survey-form">
+      <fieldset name="about">
+        <legend>Tell us about yourself</legend>
+        <div class="container">
+        <label id="name-label">Name: <input required placeholder="Enter your name" id="name" type="text"/></label>
+        <label id="email-label">Email: <input placeholder="Enter your email" required id="email" type="email"/></label>
+        <label id="number-label">Age (optional): <input placeholder="Enter your age" id="number" type="number" min="5" max="120"/></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Which option best describes your current role?</legend>
+        <select id="dropdown">
+          <option value="">Select one</option>
+          <option value="0">Student (earning)</option>
+          <option value="1">Student (non-earning)</option>
+          <option value="2">Non-student (earning)</option>
+          <option value="3">Non-student (non-earning)</option></select>
+      </fieldset>
+      <fieldset>
+        <legend>Would you be willing to purchase games from Teji?</legend>
+        <label><input type="radio" value="0" name="verdict"> Yes</label>
+        <label><input type="radio" value="1" name="verdict"> No</label>
+        <label><input type="radio" value="2" name="verdict"> Undecided</label>
+      </fieldset>
+      <fieldset>
+        <legend>Games of which genre do you like?</legend>
+        <label><input type="checkbox" value="Action"/>Action</label>
+        <label><input type="checkbox" value="Action-adventure"/>Action-adventure</label>
+        <label><input type="checkbox" value="Adventure"/>Adventure</label>
+        <label><input type="checkbox" value="Puzzle"/>Puzzle</label>
+        <label><input type="checkbox" value="Sports"/>Sports</label>
+        <label><input type="checkbox" value="Simulation"/>Simulation</label>
+        <label><input type="checkbox" value="Strategy"/>Strategy</label>
+      </fieldset>
+      <label class="textarea">Any comments or suggestions? <textarea rows="3" cols="30" placeholder="Enter your comments/suggestions here..."></textarea></label>
+      <label><input id="submit" type="submit"/></label>
+    </form>
+  </body>
+</html>
